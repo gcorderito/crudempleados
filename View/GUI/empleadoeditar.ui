@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupdatos">
+     <property name="title">
+      <string>Datos del Empleado</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lblcedula">
+        <property name="text">
+         <string>Cedula:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="txtcedula"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lblnombre">
+        <property name="text">
+         <string>Nombre:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="txtnombre"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lbltelefono">
+        <property name="text">
+         <string>Teléfono:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="txttelefono"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="lblcorreo">
+        <property name="text">
+         <string>Correo:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="txtcorreo"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="lblnacimiento">
+        <property name="text">
+         <string>Fecha de nacimiento:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QDateEdit" name="datenacimiento">
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="lblsexo">
+        <property name="text">
+         <string>Sexo:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QFrame" name="frmsexo">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="rbmasculino">
+           <property name="text">
+            <string>Masculino</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbfemenino">
+           <property name="text">
+            <string>Femenino</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbninguno">
+           <property name="text">
+            <string>N/A</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="lbledad">
+        <property name="text">
+         <string>Edad:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QSpinBox" name="spbedad">
+        <property name="maximum">
+         <number>200</number>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="lbldepartamento">
+        <property name="text">
+         <string>Departamento:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="cbxdepartamento"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="lblsueldo">
+        <property name="text">
+         <string>Sueldo:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QDoubleSpinBox" name="spbsueldo">
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
+        <property name="maximum">
+         <double>999999.989999999990687</double>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="lblestado">
+        <property name="text">
+         <string>Estado</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QCheckBox" name="chkestado">
+        <property name="text">
+         <string>Activo</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnguardar">
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>9</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnlimpiar">
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btncerrar">
+        <property name="text">
+         <string>Cerrar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
